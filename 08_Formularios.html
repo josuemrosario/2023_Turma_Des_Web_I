@@ -15,7 +15,45 @@
     <!-- O que são os metodos GET POST HTTPS ???-->
     <!--    informe o verbo GET com METHOD -->
 
+    <form action="#" method="GET" name="cadastro_consulta">
 
+        <label id="teste" for="nome">seu nome : </label>
+        <input id="nome" class="" type="text">
+
+        <br>
+
+        <label for="endereco" >Endereco : </label>
+        <input id="endereco" type="text" placeholder="digite seu endereço" size="30" maxlength="5" >
+
+        <br>
+
+        <label for="telefone">Telefone : </label>
+        <input type="tel" required placeholder="(xx)xxxxx-xxxx" pattern="/([0-9]{2}/)">
+
+        <br>
+
+        <input type="submit" value="enviar" >
+
+
+
+
+
+        <script>
+            function modifica(){
+            console.log("teste")
+            document.getElementById("teste").innerText = "xxxx"
+            }
+        </script>
+    </form>
+    
+    
+    
+    
+    
+    <form action="#" name="cadastro_consulta" method="get">
+
+
+        
 
 
         <!-- 02 - Acrescente um LABEL nome: e um input TEXT-->
@@ -23,14 +61,11 @@
         <!--     Adicione um PLACEHOLDER -->
 
 
-        
-        <br><br>
-
         <!-- 03 - Acrescente um LABEL endereço: e um input TEXT-->
         <!--      Adicione um PLACEHOLDER -->
         <!--      adicione Atributo REQUIRED -->
         <!--      adicione um SIZE para tamanho de 40 caracteres -->
-        Endereco:
+        
 
 
         <br><br>
@@ -40,26 +75,26 @@
         <!--      [0-9]{2} dois digitos de 0 até 9 -->
         <!--      \(   \)  colocar um ( ou um ) -->
         <!--      adicione REQUIRED e PLACEHOLDER-->
-        Telefone:
+        
 
 
         <br><br>
 
         <!-- 05 - Acrescente um TEXTAREA sintomas: e um input TEXT -->
         <!--    - Acrescente COLS ROWS PLACEHOLDER-->
-        Sintomas
+        
 
 
         <br><br>
 
         <!-- 06 - Acrescente um LABEL data da consulta: e um input DATE -->
-        Data da consulta
+        
 
 
         <br><br>
 
          <!-- 07 - Acrescente um LABEL hora da consulta: e um input TIME -->
-        Hora da consulta
+        
 
 
         <br><br>
@@ -67,18 +102,14 @@
         <!-- 08 - dois input RADIO para sexo masculinmo ou feminino-->
         <!--    - Selecione um dos dois com NAME -->
 
-        sexo
 
-        Masculino
-        Feminino
 
         <br><br>
     
         <!-- 09 - dois input CHECKBOX para FACEBOOK e INSTAGRAM-->
-        Já ví anuncios desta clinicas no:
+
         <br>
-        Facebook
-        Instagram
+
 
         <br><br>
 
