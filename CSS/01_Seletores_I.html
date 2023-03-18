@@ -1,0 +1,103 @@
+<!-- Item do plano de Curso -->
+<!--   Modelo de estilo em cascata, regra CSS, seletores e atributos-->
+<!--   Introduzir os termos :  regra CSS, Seletor e atributo -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de estilo em cascata, regra CSS, seletores e atributos</title>
+
+    <style>
+        
+        
+        /* SELECAO POR TAG  */
+        /********************************************************************/
+        /* 01- Selecionar os elementos h1 e deixar texto em vermelho  */
+        /* 02- Alterar para Selecionar os elementos h1 e h2 com virgula */
+        
+        
+        /* SELECAO POR CLASSE (USE PONTO OU PONTO ENCADEADO)  */
+        /********************************************************************/
+        /* xx- Selecionar os elementos da classe classe 1 e deixar em verde  */
+        /* Observar o que ocorreu com a tag h2 */
+        
+
+        /* xx- Selecionar apenas os li com classe1 e deixar em azul */
+        /* xx- modificar para apenas os li que contenham classe1 e classe4 */
+        /*
+        
+
+        /* SELECAO POR ID (USE PONTO #)  */
+        /********************************************************************/
+        /* XX - Deixe em amarelo os elementos de id4  */
+        /*      Observar que os sub elementos que não possuiam classe */
+        /*      Comente as regras que atingem as classes 1  e 4  */
+
+
+        /* XX - Apenas elementos li com id "id_li1" */
+        /*    use background-color em blueviolet*/
+
+
+        /* SELETOR UNIVERSAL (USE *)  */
+        /********************************************************************/
+        /* xx - Deixe background em brown   */
+        /*
+
+
+
+        /*OBS: Nesse ponto evite poluição comentando as regras anteriores
+
+        /* SELETOR POR ATRIBUTO (USE [])  */
+        /********************************************************************/
+        /* xx - Deixe background em brown apenas os que contenham atributo alt  */
+
+
+
+        /* xx - Deixe background em azul apenas os que contenham atributo alt  */
+        /*    - mas que iniciem pela palavra "um"  (use ^) */
+        
+        /*
+
+
+        /* xx - Deixe background em beige apenas os que contenham a palavra "interessante"  */
+        /*    - mas que iniciem pela palavra "um" (use ~) */
+
+
+    </style>
+
+</head>
+<body>
+
+    <h1 id="id1" alt="um titulo legal e interessante" >Heading H1, Heading H1, Heading H1, Heading H1, Heading H1, Heading H1</h1>
+
+    <h2 id="id2" class="classe1" alt="um  outro titulo legal">Heading H2, Heading H2, Heading H2, Heading H2, Heading H2, Heading H2</h2>
+
+    <br>
+
+    <p id="id3" class="classe1" alt="paragrafo grande e chato mas também interessante">
+        este é um paragrafo, este é um paragrafo, este este é um paragrafo, este é um paragrafo, <br>
+        este é um paragrafo, este é um paragrafo, este este é um paragrafo, este é um paragrafo, <br>
+        este é um paragrafo, este é um paragrafo, este este é um paragrafo, este é um paragrafo, <br>
+    </p>
+
+    <br>
+    
+    <ul id="id4">
+        <li id="id_li1" class="classe1 classe4">Elemento de lista - 1</li>
+        <li id="id_li1" class="classe3 classe4">Elemento de lista - 2</li>
+        <li id="id_li2" class="classe1 classe4">Elemento de lista - 3</li>
+        <li id="id_li2" class="classe3 classe5">Elemento de lista - 4</li>
+        <li id="id_li2" class="classe1 classe5">Elemento de lista - 5</li>
+    </ul>
+
+
+
+
+
+
+    
+</body>
+</html>

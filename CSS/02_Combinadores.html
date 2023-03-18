@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Combinadores</title>
+
+    <style>
+
+        /* PARA UM DEPOIS DO OUTRO USE +
+        /*********************************************************************/
+        /*xx - Selecionar um li que vem depois de um ul*/
+        /*xx - Selecionar uma classe que vem depos da outra*/
+        /*xx - Selecionar um id2 que vem depois de id1. funcionou ?*/
+        /*xx - Selecionar um id3 que vem depois de id1. ?*/
+        /*xx - Tente selecionar o li que vem depois do ul. Deu certo ? */
+      
+
+
+
+
+
+        /* PARA UM QUE VEM DENTRO DO OUTRO USE > */
+        /* ANTENÇÃO: ESSE SERVE APENAS PARA O FILHO O NETO NÃO ENTRA NA JOGADA*/
+        /*********************************************************************/
+        /* xx - Selecione os lis que estão dentro de um ul*/
+        /* xx - Mude para um li dentro de um ul que contenha a classe2 (use .) */
+        /* xx - Mude para um li dentro de um ul ul que contenha id "li_id1" (use #) */
+
+
+
+
+        /* XX UM NO MESMO NIVEL QUE O OUTRO MAS CONSIDERANDO APENAS O PRIMEIRO USE :first-of-type */
+        /*********************************************************************/
+        /*xx - Selecione o primeiro li que esteja no mesmo de outro*/   
+
+
+
+
+        /*xx - Selecione um h2 que venha depois de um h3*/   
+
+        /*
+        
+
+
+        /* PARA TODOS OS FILHOS QUE ESTÃO DENTRO DE UM PAI USE ESPAÇO */
+        /* ANTENÇÃO: ESSE SERVE PRA FILHO NETO BISNETO, GERAÇÃO TODA*/
+        /*********************************************************************/
+        
+        /* xx - primeiro relembre > */
+        /* xx -   selecionando um span que é filho direto de um paragrafo */
+        /* xx - agora tente selecionar um b que é neto  */
+        /* xx - agora use o espaço para selecionar o neto b a partir do avô p*/
+        
+
+
+
+        
+    
+        
+    </style>
+
+</head>
+
+
+<body>
+
+    <ul class="classe1">
+        <li>primeiro list item</li>
+        <li>segundo list item</li>
+        <li>terceiro list item</li>
+        <li>quarto list item</li>
+    </ul>
+
+    <ul class="classe2">
+        <li id="li_id1">primeiro list item</li>
+        <li>segundo list item</li>
+        <li>terceiro list item</li>
+        <li>quarto list item</li>
+    </ul>
+
+    <h1 class="classe2"> Esse H1 vem  depois da Unordered List e ambos fazem parte do body</h1>
+
+    
+    <div id="id1">
+        <p id="id2">
+            Este é um paragrafo, Este é um paragrafo, Este é um paragrafo, Este é um paragrafo, Este é um paragrafo, <br>
+            Este é um paragrafo, Este é um paragrafo, Este é um paragrafo, Este é um paragrafo, Este é um paragrafo, 
+        </p>
+    </div>
+
+    <h2 id="id3"> Este H2 vem depois da div</h2>
+
+    <div id="div1">
+        <h3> ESSE É H3 </h2>
+        <h2> ESSE É H2  </h2>
+        <h2> ESSE E H2 </h2>
+        <h2> ESSE É h2   </h2>
+    </div>
+
+    
+    <ul>
+        <li>
+          <div>Item 1</div>
+          <ul>
+            <li>Item 1.1</li>
+            <li>Item 1.2</li>
+          </ul>
+        </li>
+        <li>
+          <div>Item 2</div>
+          <ul>
+            <li>ITEM 2.1</li>
+            <li>ITEM 2.2</li>
+          </ul>
+        </li>
+    </ul>
+
+
+     <p> UM PARAGRAFO QUE 
+        <span> TEM UM SPAN COM 
+            <b>OUTRO SPAN</b>  DENTRO 
+        </span> É DIFICIL DE ENCONTRAR  </p>
+
+
+
+</body>
+</html>
