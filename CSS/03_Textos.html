@@ -1,0 +1,129 @@
+<!-- Item do plano de curso: -->
+<!--     Estilização de conteúdo; -->
+<!-- Estilizando Textos -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilização de conteúdo - Textos</title>
+    <style>
+        .primeiro{
+                
+            /*01 - modificar a cor */
+            /*  color:             */
+            /*sistema nominal, RGB, RGBA, Hexadecimal*/
+            color: #ffcf5c;
+
+            
+            /*01 - modificar a familia de fontes*/
+            /*  font-family:                   */
+            /* Conceito: Web safe fonts         */
+            /*https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Fundamentals*/
+            /* font-family: Arial, Helvetica, sans-serif;*/
+            
+
+            /*03 - modificar tamanho das fontes*/
+            /* font-size:*/
+            /* px valor absoluto */
+            /* em depende do tamanho do pai. */
+            /*     1em = mesmo tamanho */
+            /*     rem depende do tamanho do nó raiz */
+            /*     funciona de modo semelhante ao em */
+            font-size: 2rem;
+
+
+            /*04 - modificar para italico*/
+            /*  font-style */
+            font-style: italic;
+
+
+            /*04 - modificar para negrito*/
+            /* font-weight: */
+            /* bold bolder */
+            font-weight: bolder;
+
+
+
+            /*05 - Maiuscula e minuscula*/
+            /* text-transform */
+            /* uppercase lowercase capitalize */
+            text-transform: uppercase;
+
+
+
+            /*06 - sublinhado e riscado*/
+            /*  text-decoration:       */
+            /* underline */
+            /* obs:tambem usada para links*/
+            text-decoration: underline;
+            text-decoration: none;
+
+
+        }
+
+        h1 {
+
+            /*07 - sombras*/
+            /* text-shadow: */
+            /* horizontal vertical blur cor */
+            text-shadow: 6px 6px 4px red
+
+
+        }
+
+        p {
+            /*08 - Alinhar o texto em relação ao pai*/
+            /* text-align: */
+            text-align: center;
+
+
+            /*09 - Tamanho da linha*/
+            /* line-height: */
+            /* Recomendação: usar entre  1.5 – 2 */
+            border: 1px solid;
+            line-height: 2;
+
+
+            /*10 - Tamanho entre letras */
+            /*letter-spacing:*/
+            /*Obs: não use*/
+            letter-spacing: 3px;
+
+
+            /*10 - Tamanho entre palavras */
+            /*word-spacing:*/
+            word-spacing: 4px;
+
+        }   
+
+        /*11 - adicionar uma fonte da web */
+        /* @font-face */
+        /* font-family: "" */
+        /* src:url() */
+        /* format: */
+        /*   Acrescente uma classe no paragrafo anterior para nao atrapalhar */
+        /*   Acrescente font-family usano a classe segundo */
+        @font-face {
+            font-family: 'minhafonte';
+            src: url('./fonts/love_larry_ttf.ttf') format('truetype');
+        }
+
+        .segundo{
+            font-family: 'minhafonte';
+            font-size: 30px;
+        }
+
+
+        
+    </style>
+</head>
+<body>
+    <h1> Titulo do pequeno texto</h1>
+    <p class="primeiro"> Um pequeno Paragrafo com algumas palavras, mais estas palavras e mais estas palavras, só mais umas.</p>
+    <p class="segundo"> Um segundo pequeno Paragrafo com algumas palavras, mais estas palavras e mais estas palavras, só mais umas.</p>
+    
+</body>
+</html>

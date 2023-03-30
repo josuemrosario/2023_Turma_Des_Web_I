@@ -1,0 +1,182 @@
+<!-- Item do plano de Curso                                                             -->
+<!--   Estilos em cascata (CSS3 ou superior)                                            -->
+<!--     Estilização de conteúdo; (Estilizando Links)                                   -->
+<!--     Fontes de Consulta                                                             -->
+<!--     https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Styling_links  -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilização de conteúdo - Links</title>
+
+    <style>
+
+        /* As duas primeiras regras servem apenas para deixar "bonita" a pagina */
+
+        body {
+            width: 400px;
+            margin: 0 auto;
+            font-size: 1.2rem;
+            font-family: sans-serif;
+        }
+
+        p {
+            line-height: 1.4;
+        }
+
+        /* Explicação: os diversos estados dos links */
+        /* Siga esta ordem para estilizar links */
+        
+        a {
+
+            /*     Regras gerais para links    */
+            /*----------------------------------*/
+
+            /*Retirar o sublinhado do link */
+            /* text-decoration: */
+
+           
+
+
+
+        }
+
+        a:link {
+
+            /*     links não visitados          */
+            /*----------------------------------*/
+
+
+
+        }
+
+        a:visited {
+
+            /*     links visitados              */
+            /*----------------------------------*/
+
+
+
+
+        }
+
+        a:focus {
+
+            /*     links que ganham o foco      */
+            /*----------------------------------*/
+            /* Acrescentar uma borda inferir solida de 1 px */
+            /* e um background verde                        */
+            /* obs: Necessário usar TAB para ver resultado  */
+
+
+        }
+
+        a:hover {
+
+            /*     acontece quando se passa o mouse por cima      */
+            /*----------------------------------------------------*/     
+            /*Acrescentar borda de 3px pontilhada(dotted)*/
+
+
+            
+
+        }
+
+        a:active {
+            
+            /*     acontece enquanto o mouse está clicado em cima  */
+            /*-----------------------------------------------------*/ 
+
+
+            
+        }
+
+
+         /* adicione uma regra selecionando todos os links(externos) que   */
+         /*   - tenham href                                                */
+         /*   - que o href inicie por http use ^=                          */
+         a[href^="http"]{
+
+            /* Acrescentar um background image */
+            /* background-image: url */
+
+
+            /* Nao permitir que se repita  */
+            /* background-repeat: */
+
+
+            /* Modificar o tamanho da imagem */
+            /* background-size: */
+
+
+            /* Adicionar background-position a direita e margem interna direita de 14px*/
+            /* ate ficar no local correto. DICA: Use o navegador */
+
+
+         }
+
+         
+         /* ---------------------------------------------------------*/
+         /*     Criando botões usando links e flexbox            */
+         /* ---------------------------------------------------------*/
+
+         /* Configura a nav para usar flexbox */
+         .container{
+            display: flex;
+            gap: 0.9%;
+         }
+
+         /* Selecionar apenas links que contenham a classe opcao*/
+         /* Adicionar as seguintes regras:                      */
+         /*    - flex:1 (tomar todo o espaço disponivel)        */
+         /*    - alterar cor de fundo                           */
+         /*    - alterar tamanho fonte para 16px                */
+         /*    - adicionar margem interna 4px                   */
+         /*    - alinhar texto no centro                        */
+         /*    - deixar arredondada a borda em 17%              */
+
+         a.opcao{
+            flex:1;
+            background-color: bisque;
+            font-size: 16px;
+            padding: 4px;
+            text-align: center;
+            border-radius: 17%;
+            
+         }
+
+    </style>
+
+</head>
+<body>
+
+    <!-- obs: Para limpar o estado de links visitados  no Chrome-->
+    <!--      use CTRL + H e delete do historico o site que foi -->
+    <!--      visitado                                          -->
+
+    <p> 
+        Varios sistemas de busca como o 
+        <a href="http://google.com.br" target="_blank" >Google</a> ou o
+        <a href="http://yahoo.com.br"  target="_blank">Yahoo</a> ou o 
+        <a href="http://bing.com.br"  target="_blank">Bing</a> 
+        funcionam de maneira similar.
+    </p>
+    <p> 
+        Para exemplificar conteudo também temos
+        <a href="#" target="_blank" > esse link </a> 
+        que não leva a lugar nenhum nem faz nada.
+    </p>
+
+    <nav class="container">
+        <a class="opcao" href="#">opcao 1</a>
+        <a class="opcao" href="#">opcao 2</a>
+        <a class="opcao" href="#">opcao 3</a>
+        <a class="opcao" href="#">opcao 4</a>
+        <a class="opcao" href="#">opcao 5</a>
+    </nav>
+    
+</body>
+</html>
