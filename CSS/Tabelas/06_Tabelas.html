@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customizando Tabelas com CSS</title>
+    <style>
+
+        
+        /*Analise a imagem abaixo */
+        /*  Tabelas\Suporte\tbl-spacing.png   */
+
+        /* 1.0 - Selecionar a tabela, th, td  */
+        /* 1.1 - Aplicar bordas */
+        /*       border: <tamanho> <tipo> <cor> *
+        /* 1.3- Trabalhar com bordas unicas ou colapsadas*/
+        /*      border-collapse */
+        /* obs aumente o tamanho da borda para observar melhor*/
+        /*      diminuir o tamanho e manter, para os exercícios subsequentes, colapsada*/
+        /* 1.4- Alinhar texto*/
+        /*      text-align  */
+        
+        table,td, th{
+          border: 1px solid red;
+          border-collapse: collapse;
+          text-align: left;
+        }
+        
+      
+
+        /* Aplicar regras para a enesima coluna */
+        /* th:nth-child(n)  td:nth-child(n) */
+        /* 01-  Selecionar a primeira colunas e deixar cor de fundo em lime */
+      
+        /* table td:nth-child(1) {
+                  background-color: lime;
+        } */
+
+        /* 02-  Selecionar a primeira linha e deixar cor de fundo em lime */
+        
+        
+        /* table>thead{
+            background-color: lime;
+        } */
+
+        /* 03-  Selecionar a primeira linha E primeira coluna, deixar cor de fundo em lime */
+
+        /* table>thead>tr, table>tbody>tr>td:nth-child(1) {
+          background-color: lime;
+        } */
+
+        /* 04-  Selecionar apenas as linha pares(even) de conteudo */
+        /*      Alterar para impares(odd) */
+        /* nth-child(xxx) */
+
+        /* table>tbody>tr:nth-child(even){
+            background-color: aliceblue;
+        } */
+
+
+        /* 02-  alterar o espaçamento da borda */
+        /* border-spacing: <entre colunas> <entre linhas> */
+        /* obs: nao funciona para boder-collapse:collapse  */
+        
+        /* table {
+            border-spacing: 0px 60px
+            
+        }  */
+
+        /* 03 -  alterar o espaçamento interno */
+        /* selecionar apenas celulas de titulo e celulas de conteudo*/
+        /* Padding */
+        /* th, td{
+          padding: 40px;
+        }
+         */
+
+        /* 04 -  Modificar a cor quando o mouse estiver por cima */
+        /* Selecionar a partir do tbody  */
+        /* tr:hover */
+
+         tbody>tr:hover{
+          background-color: antiquewhite;
+          text-align: left;
+
+         }
+
+
+
+        
+
+    </style>
+</head>
+<body>
+
+    <table>
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>Endereço</th>
+            <th>Sexo</th>
+            <th>Data de Nascimento</th>
+            <th>Telefone</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>João Silva</td>
+            <td>Rua das Flores, 123</td>
+            <td>Masculino</td>
+            <td>01/01/1990</td>
+            <td>(11) 1234-5678</td>
+          </tr>
+          <tr>
+            <td>Maria Souza</td>
+            <td>Avenida Paulista, 456</td>
+            <td>Feminino</td>
+            <td>05/03/1985</td>
+            <td>(11) 2345-6789</td>
+          </tr>
+          <tr>
+            <td>Carlos Santos</td>
+            <td>Rua do Comércio, 789</td>
+            <td>Masculino</td>
+            <td>15/07/1978</td>
+            <td>(11) 3456-7890</td>
+          </tr>
+          <tr>
+            <td>Julia Ferreira</td>
+            <td>Rua dos Bancários, 321</td>
+            <td>Feminino</td>
+            <td>28/12/1993</td>
+            <td>(11) 4567-8901</td>
+          </tr>
+          <tr>
+            <td>Pedro Almeida</td>
+            <td>Rua do Bosque, 987</td>
+            <td>Masculino</td>
+            <td>10/05/1982</td>
+            <td>(11) 5678-9012</td>
+          </tr>
+          <tr>
+            <td>Ana Santos</td>
+            <td>Rua das Palmeiras, 654</td>
+            <td>Feminino</td>
+            <td>20/11/1996</td>
+            <td>(11) 6789-0123</td>
+          </tr>
+          <tr>
+            <td>Lucas Silva</td>
+            <td>Avenida Brasil, 1234</td>
+            <td>Masculino</td>
+            <td>07/09/1998</td>
+            <td>(11) 7890-1234</td>
+          </tr>
+          <tr>
+            <td>Bianca Oliveira</td>
+            <td>Rua da Praia, 567</td>
+            <td>Feminino</td>
+            <td>12/04/1989</td>
+            <td>(11) 8901-2345</td>
+          </tr>
+          <tr>
+            <td>Fernando Alves</td>
+            <td>Rua dos Artistas, 890</td>
+            <td>Masculino</td>
+            <td>25/06/1987</td>
+            <td>(11) 9012-3456</td>
+          </tr>
+          <tr>
+            <td>Sofia Santos</td>
+            <td>Rua do Sol, 4321</td>
+            <td>Feminino</td>
+            <td>02/02/1999</td>
+            <td>(11) 0123-4567</td>
+          </tr>
+        </tbody>
+    </table>
+</body>
+</html>
