@@ -24,7 +24,7 @@
         }
 
         p {
-            line-height: 1.4;
+             line-height: 1.4;
             
         }
 
@@ -39,7 +39,7 @@
             /*Retirar o sublinhado do link */
             /* text-decoration: */
 
-           text-decoration: none;
+           text-decoration: none; 
 
 
 
@@ -49,6 +49,7 @@
 
             /*     links não visitados          */
             /*----------------------------------*/
+            color: blueviolet;
 
 
 
@@ -59,7 +60,7 @@
             /*     links visitados              */
             /*----------------------------------*/
 
-
+            color:brown;
 
 
         }
@@ -71,6 +72,8 @@
             /* Acrescentar uma borda inferir solida de 1 px */
             /* e um background verde                        */
             /* obs: Necessário usar TAB para ver resultado  */
+             background-color: blanchedalmond;
+             border: none;
 
 
         }
@@ -81,7 +84,7 @@
             /*----------------------------------------------------*/     
             /*Acrescentar borda de 3px pontilhada(dotted)*/
 
-
+            border: 3px dotted red;
             
 
         }
@@ -90,10 +93,12 @@
             
             /*     acontece enquanto o mouse está clicado em cima  */
             /*-----------------------------------------------------*/ 
+            background-color: black;
 
 
             
         }
+
 
 
          /* adicione uma regra selecionando todos os links(externos) que   */
@@ -103,18 +108,23 @@
 
             /* Acrescentar um background image */
             /* background-image: url */
+            background-image: url('./img/link-externo.png');
 
 
             /* Nao permitir que se repita  */
             /* background-repeat: */
+            background-repeat: no-repeat;
 
 
             /* Modificar o tamanho da imagem */
             /* background-size: */
+            background-size: 13px;
 
 
             /* Adicionar background-position a direita e margem interna direita de 14px*/
             /* ate ficar no local correto. DICA: Use o navegador */
+            background-position: right;
+            padding-right: 17px;
 
 
          }
@@ -140,12 +150,15 @@
          /*    - deixar arredondada a borda em 17%              */
 
          a.opcao{
-            flex:1;
+            flex: 1;
             background-color: bisque;
             font-size: 16px;
-            padding: 4px;
+            padding: 13px;
             text-align: center;
-            border-radius: 17%;
+            border-radius: 20px ;
+            text-transform: uppercase;
+
+
             
          }
 
@@ -176,7 +189,7 @@
         <a class="opcao" href="#">opcao 2</a>
         <a class="opcao" href="#">opcao 3</a>
         <a class="opcao" href="#">opcao 4</a>
-        <a class="opcao" href="#">opcao 5</a>
+        
     </nav>
     
 </body>
