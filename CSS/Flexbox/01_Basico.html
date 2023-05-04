@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="pt-BR">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox 1</title>
+    <style>
+        html {
+            font-family: sans-serif;
+        }
+
+        body {
+            margin: 0;
+        }
+        
+        header {
+            background: purple;
+            height: 100px;
+        }
+        
+        article {
+            border: 2px  solid red ;
+            background-color: rgb(225, 142, 142);
+            margin: 5px;
+            /* adicionar width aqui */
+
+
+        }
+
+        /*
+        OBSERVAÇÕES IMPORTANTES 
+
+        NO PAI QUE SE USA : 
+           display, flex-direction, flex-wrap, justify-content, align-itens, align-content
+           flex-flow(shorthand para flex-direction e flex-wrap)
+
+
+        NOS FILHOS QUE SE USA : 
+            order, flex-grow, flex-shrink, flex-basis, align-self
+            flex(shorthand)
+        
+        */
+
+
+
+        /*01 - Primeiro adicionar o pai (section) com display:flex*/
+        /* O pai é flex container e os filhos flex-itens*/
+        
+        /*---------FLEX-DIRECTION MUDA A DIREÇÃO ------------------------------*/
+        /* OBS: FLEX-DIRECTION DEFINE QUEM VAI SER O MAIN-AXIS */
+        /*02 - Mudar a direção com flex-direction - row ou column*/
+        /*05 - alterar novamente o flex-direction para row */
+
+        /*---------FLEX-WRAP (PULA OU NÃO PULA LINHA) ------------------------------*/
+        /* OBS: FUNCIONA QUANDO O FILHO POSSUI LARGURA */
+        /* 06 - adicione uma largura no article 
+              - teste  esssa largura aumentando no navegador
+                 o que acontece quando a largura aumenta até o fim da largura da viewport ?
+              - adicione flex-wrap (wrap ou no-wrap) 
+                o que acontece quando a largura aumenta até o fim da largura da viewport ?
+              - manter flex-wrap em nowrap
+              - retire a width dos filhos
+        */
+
+
+        /*---------FLEX-FLOW: FLEX-DIRECTION FLEX-WRAP ------------------------------*/
+         /* 06 - retire flex-direction e  flex-wrap 
+               - adicione flex-flow
+         */
+
+        /*02 - Observar como a altura dos filhos acompanham a altura do pai*/
+        /*   - Adicione uma cor de fundo aquamarine na section
+             - Adicione height na section, testar e retirar
+        */
+
+
+
+    </style>
+</head>
+<body>
+    
+    <header>
+        <h1>PROPRIEDADE BASICAS</h1>
+    </header>
+    
+    <!-- Observe que a section é pai de tres articles -->
+    
+    <section>
+
+        <article>
+            <h2>FLEX ITEM 1</h2>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, eius recusandae fugiat voluptate beatae, quam cupiditate dicta iste quod earum a consectetur. Voluptatum quod recusandae voluptatibus voluptate nobis porro repellat.</p>
+        </article>
+        
+        <article>
+            <h2>FLEX ITEM 2</h2>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, eius recusandae fugiat voluptate beatae, quam cupiditate dicta iste quod earum a consectetur. Voluptatum quod recusandae voluptatibus voluptate nobis porro repellat.</p>
+        </article>
+        
+        <article>
+            <h2>FLEX ITEM 3</h2>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, eius recusandae fugiat voluptate beatae, quam cupiditate dicta iste quod earum a consectetur. Voluptatum quod recusandae voluptatibus voluptate nobis porro repellat.</p>
+        </article>
+        
+    </section>
+
+
+    
+</body>
+</html>
